@@ -164,9 +164,9 @@ async function fetchDataAPI(
     //const api = "http://localhost:5000/api/mcqs?context=" + context;
     const api = "http://54.145.62.112:8000/api/mcqs?context=" + context;
     const response = await fetch(api);
-
+    console.log(response);
     const data = await response.json();
-    //console.log(data);
+    console.log(data);
     setFetchedContent(data);
   } catch {
     setError(true);

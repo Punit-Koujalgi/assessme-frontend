@@ -1,7 +1,7 @@
 ssh -i C:\Users\Punit\ReactProjects\flask2.pem ubuntu@65.0.171.118
 source my_env/bin/activate
 pkill gunicorn (For "Connection in use" error)
-gunicorn -b 0.0.0.0:8000 --access-logfile - --workers=3 --timeout 200 "application:application"
+gunicorn -b 0.0.0.0:8000 --access-logfile - --workers=3 --timeout 500 "application:application"
 
 ssh -i C:\Users\Punit\ReactProjects\blogger.pem ubuntu@3.226.8.44
 source myenv/bin/activate
@@ -11,6 +11,12 @@ http://ec2-3-226-8-44.compute-1.amazonaws.com:8000/
 
 
 github-vscode-auth: vscode://vscode.github-authentication/did-authenticate?windowid=1&code=57953ed0fa79fe67c496&state=8e8b5d7c-28eb-4b00-a548-22aedf4e56f3
+
+Born and raised in central Argentina, Messi relocated to Spain to join Barcelona at age 13, for whom he made his competitive debut aged 17 in October 2004. He established himself as an integral player for the club within the next three years, and in his first uninterrupted season in 2008–09 he helped Barcelona achieve the first treble in Spanish football; that year, aged 22, Messi won his first Ballon d'Or. Three successful seasons followed, with Messi winning four consecutive awards, making him the first player to win the award four times and in a row.
+
+In 2011, documents obtained by WikiLeaks revealed that Beyonce was one of many entertainers who had received extravagant sums to perform for the family of Libyan ruler Muammar Gaddafi. Rolling Stone reported that the music industry was urging them to return the money they earned for the concerts; a spokesperson for Knowles later confirmed to The Huffington Post that she donated the money to the Clinton Bush Haiti Fund. she was named the "Highest Paid Performer Per Minute in the World".
+
+People's Education Society (PES) was founded in 1972 and started PUC course with just over 40 students in a rented gymnasium at Bangalore. Today, PES has more than 15,000 students and 1000 staff spread across four different campuses in Karnataka and Andhra Pradesh offering programs ranging from Pre-University to Post Graduation. PES is focused on four main educational areas: Engineering, Medicine, Management and Life Sciences.
 
 Architecturally, the school has a Catholic character. Atop the Main Building\'s gold dome is a golden statue of the Virgin Mary. Immediately in front of the Main Building and facing it, is a copper statue of Christ with arms upraised with the legend "Venite Ad Me Omnes". Next to the Main Building is the Basilica of the Sacred Heart. Immediately behind the basilica is the Grotto, a Marian place of prayer and reflection. It is a replica of the grotto at Lourdes, France where the Virgin Mary reputedly appeared to Saint Bernadette Soubirous in 1858. At the end of the main drive (and in a direct line that connects through 3 statues and the Gold Dome), is a simple, modern stone statue of Mary.
 
