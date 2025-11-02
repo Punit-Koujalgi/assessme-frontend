@@ -1,6 +1,6 @@
 {
-  "homepage":"http://Punit-Koujalgi.github.io/AssessMe",
-  "name": "assess-me",
+  "homepage":"http://Punit-Koujalgi.github.io/assessme-frontend",
+  "name": "assessme-frontend",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -16,12 +16,12 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build",
+  "start": "NODE_OPTIONS=--openssl-legacy-provider react-scripts start",
+  "build": "NODE_OPTIONS=--openssl-legacy-provider react-scripts build",
+  "test": "NODE_OPTIONS=--openssl-legacy-provider react-scripts test",
+  "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [

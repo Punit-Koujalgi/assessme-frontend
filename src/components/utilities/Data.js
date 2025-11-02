@@ -155,22 +155,30 @@
 // };
 
 async function fetchDataAPI(
-  context,
-  setError,
-  setFetchedContent,
-  setIsLoading
+	context,
+	setError,
+	setFetchedContent,
+	setIsLoading
 ) {
-  try {
-    //const api = "http://localhost:5000/api/mcqs?context=" + context;
-    const api = "http://54.145.62.112:8000/api/mcqs?context=" + context;
-    const response = await fetch(api);
-    console.log(response);
-    const data = await response.json();
-    console.log(data);
-    setFetchedContent(data);
-  } catch {
-    setError(true);
-  }
-  setIsLoading(false);
+	try {
+		//const api = "http://localhost:5000/api/mcqs";
+		const api = (process.env.REACT_APP_API_URL || "http://127.0.0.1:7860").replace(/\/+$/, '');
+		const url = `${api}/api`;
+
+		const response = await fetch(url, {
+			method: "POST",
+			headers: { "Content-Type": "application/json" },
+			body: JSON.stringify({ context }),
+		});
+		console.log(response);
+		const data = await response.json();
+		console.log(data);
+		setFetchedContent(data);
+	} catch (err) {
+		console.error(err);
+		setError(true);
+	} finally {
+		setIsLoading(false);
+	}
 }
 export default fetchDataAPI;
